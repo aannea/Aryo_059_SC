@@ -7,18 +7,21 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        margin: 20px;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
       }
 
       h1 {
         text-align: center;
+        color: #007bff;
       }
 
       .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f7f7f7;
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 50px;
+        background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
@@ -27,15 +30,17 @@
         display: block;
         margin-bottom: 5px;
         font-weight: bold;
+        color: #555;
       }
 
       input,
       select {
         margin-bottom: 10px;
-        padding: 5px;
+        padding: 10px;
         width: 100%;
         border: 1px solid #ccc;
-        border-radius: 3px;
+        border-radius: 5px;
+        transition: border-color 0.3s;
       }
 
       input[type="submit"] {
@@ -45,6 +50,35 @@
         border: none;
         padding: 10px 20px;
         cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      input:hover,
+      select:hover {
+        border-color: #007bff;
+      }
+
+      .radio-label,
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: normal;
+      }
+
+      .radio-input,
+      .checkbox-input {
+        margin-right: 10px;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
       }
     </style>
   </head>
@@ -56,8 +90,12 @@
         <label for="button">Button:</label>
         <input type="button" id="button" value="Klik tombol ini" />
 
-        <label for="checkbox">Checkbox:</label>
-        <input type="checkbox" id="checkbox" name="checkbox" value="check" />
+        <div class="checkbox-label">
+          <input type="checkbox" id="checkbox1" name="checkbox" value="option1" class="checkbox-input" />
+          <label class="checkbox-label" for="checkbox1">Option 1</label>
+          <input type="checkbox" id="checkbox2" name="checkbox" value="option2" class="checkbox-input" />
+          <label class="checkbox-label" for="checkbox2">Option 2</label>
+        </div>
 
         <label for="color">Color:</label>
         <input type="color" id="color" name="color" />
@@ -90,10 +128,12 @@
         <input type="password" id="password" name="password" />
 
         <label for="radio">Radio Buttons:</label>
-        <input type="radio" id="radio1" name="radio" value="option1" />
-        <label for="radio1">Option 1</label>
-        <input type="radio" id="radio2" name="radio" value="option2" />
-        <label for="radio2">Option 2</label>
+        <div class="radio-label">
+          <input type="radio" id="radio1" name="radio" value="option1" class="radio-input" />
+          <label class="radio-label" for="radio1">Option 1</label>
+          <input type="radio" id="radio2" name="radio" value="option2" class="radio-input" />
+          <label class="radio-label" for="radio2">Option 2</label>
+        </div>
 
         <label for="range">Range:</label>
         <input type="range" id="range" name="range" min="0" max="100" />
