@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 10px solid transparent; /* Border width */
+            border-image-source: url('image/love.png'); /* Path to the image */
+            border-image-slice: 25; /* Adjust to control the size of the border image */
+            border-image-repeat: round; /* Use 'round' to repeat the image around the border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contoh Border Image</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nisl ac tortor convallis feugiat ac eu metus. Phasellus in nisi non libero euismod fringilla. Sed tincidunt tristique magna, ut elementum odio consectetur eu. Nullam eu vestibulum felis. Fusce ac lectus a justo euismod hendrerit ut eu velit. Vestibulum euismod in felis et euismod. Nulla facilisi. Integer quis magna a ipsum facilisis pellentesque.
+        </p>
+    </div>
+</body>
+</html>
