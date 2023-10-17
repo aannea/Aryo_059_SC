@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Pembuatan Kelompok Acak</title>
+  </head>
+  <body>
+    <div class="center-container">
+      <div class="container">
+        <h1>Pembuatan Kelompok Acak</h1>
+        <div class="input-group">
+          <label for="names">Masukkan Nama-nama (Pisahkan dengan Enter):</label><br />
+          <textarea id="names" rows="6"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="groupCount">Jumlah Kelompok:</label>
+          <input type="number" id="groupCount" min="1" value="1" />
+        </div>
+        <button id="generateButton">Buat Kelompok Acak</button>
+        <button id="shuffleAgainButton" class="hidden">Acak Lagi</button>
+        <button id="resetButton" class="hidden">Ulang</button>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
