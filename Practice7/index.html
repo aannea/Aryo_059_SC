@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="assets/img/favicon.png" />
-    <title>Album example for Bootstrap</title>
+    <title>Quotes Album</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -124,7 +124,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Do Nothing</button>
           </div>
         </div>
       </div>
@@ -253,7 +252,7 @@
             updateQuote(this);
           }
         });
-        sessionStorage.setItem("student_id", "1060");
+        sessionStorage.setItem("student_id", "1094");
         sessionStorage.setItem("nim", "21102059");
         getQuotes("https://quotesbeta.tugaskelas.my.id/index.php/quotes/q/my_quote/" + sessionStorage.getItem("nim"), "My Quotes");
       });
